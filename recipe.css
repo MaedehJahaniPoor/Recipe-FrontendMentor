@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --bg-color: hsl(330, 100%, 98%);
+
+    /*Typography h1*/
+    --ff-h1: Young Serif, verdana;
+    --fc-h1: hsl(24, 5%, 18%);
+    --fs-h1: 32px;
+    --fw-h1: 600;
+
+    /*Typography h2*/
+    --ff-h2: var(--ff-h1);
+    --fc-h2: hsl(14, 45%, 36%);
+    --fw-h2: 400;
+    --fs-h2: 22px;
+  
+    /*Typography h5*/
+      --ff-h5: Outfit, verdana;
+      --fc-h5: hsl(24, 5%, 18%);
+      --fs-h5: 14px;
+      --fw-h5: 600;
+
+    /*Typography p*/
+      --ff-p: Outfit, verdana;
+      --fc-p: hsl(30, 10%, 34%);
+      --fs-p: 14px;
+      --fw-p: 300;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    margin:0;
+    padding:0;
+}
+
+.container {
+    padding:30px;
+}
+
+article.grid {
+    background-color:white;
+    margin: 50px auto;
+    width:45%;
+    height:auto;
+    border-radius: 20px;
+}
+
+section.header img {
+    width:100%;
+    border-radius: 10px;
+}
+section.header h1{
+    font-family: var(--ff-h1);
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-h1);
+    color: var(--fc-h1);
+    margin:20px 0;
+}
+
+section.header p {
+    font-family: var(--ff-p);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-p);
+    color: var(--fc-p);
+    margin:0;
+    text-align:justify;
+    margin-bottom:20px;
+    line-height:22px;
+}
+
+
+section.preparation {
+    background-color: var(--bg-color);
+    font-family: var(--ff-p);
+    padding: 30px;
+}
+
+
+section.preparation h3 {
+    color:hsl(332, 51%, 32%);
+    font-size: var(--fs-h5);
+    margin:0;
+}
+
+section.preparation ul {
+    padding-left:30px;
+    margin-bottom:0;
+}
+section.preparation ul li{
+    font-size: var(--fs-p);
+    color: var(--fc-p);
+    margin-bottom:10px;
+}
+
+section.preparation ul li::marker {
+    font-size:12px;
+}
+
+section.preparation ul li:last-of-type {
+    margin:0;
+}
+
+section.preparation ul li span {
+    font-weight: var(--fw-h5);
+    margin-left:15px;
+}
+
+section.ingredient h2 {
+    font-family: var(--ff-h2);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-h2);
+    color: var(--fc-h2);
+    margin:20px 0;
+}
+
+section.ingredient ul {
+    padding-left:20px;
+    margin-bottom:30px;
+}
+
+section.ingredient ul li {
+    font-family: var(--ff-p);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-p);
+    color: var(--fc-p);
+
+}
+
+
+section.ingredient ul li p {
+    margin:0;
+    margin-left:15px;
+    margin-bottom: 10px;
+}
+
+
+section.ingredient ul li::marker {
+    font-size:12px;
+}
+
+section.instruction h2 {
+    font-family: var(--ff-h2);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-h2);
+    color: var(--fc-h2);
+    margin:20px 0;
+
+}
+
+section.instruction ol {
+    padding-left:20px;
+    margin-bottom:30px;
+}
+
+section.instruction ol li {
+    font-family: var(--ff-p);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-p);
+    color: var(--fc-p);
+    margin-bottom:10px;
+    padding-left:15px;
+}
+
+section.instruction ol li span {
+    font-weight: var(--fw-h5);
+
+}
+
+section.instruction ol li p{
+    display:inline;
+    text-align:justify;
+    line-height:22px;
+}
+
+section.instruction ol li::marker {
+    color:hsl(332, 51%, 32%);
+    font-weight: var(--fw-h5);
+}
+
+hr {
+    border-top: 1px solid hsl(24, 4%, 76%) ;
+}
+
+section.nutrition h2 {
+    font-family: var(--ff-h2);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-h2);
+    color: var(--fc-h2);
+}
+
+section.nutrition p {
+    font-family: var(--ff-p);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-p);
+    color: var(--fc-p);
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+section.nutrition table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+section.nutrition table th, 
+section.nutrition table td {
+    border-bottom:1px solid hsl(26, 3%, 59%);
+    font-family: var(--ff-p);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-p);
+    color: var(--fc-p);
+}
+
+section.nutrition table tr:last-child th, 
+section.nutrition table tr:last-child td{
+    border-bottom:none;
+}
+
+section.nutrition th,td {
+    text-align:left;
+    padding:10px 0;
+}
+
+section.nutrition table th{
+    font-weight: 400;
+    padding-left:25px;
+    width:50%;
+}
+
+section.nutrition table td {
+    color:hsl(332, 51%, 32%);
+    font-weight: var(--fw-h5);
+}
+
+
+@media screen and (max-wdith: 375px) {
+
+    .container {
+    padding:30px;
+    }
+
+    article.grid {
+    background-color:white;
+    margin: 50px auto;
+    width:100%;
+    height:auto;
+    border-radius: 20px;
+}
+
+section.header img {
+    width:100%;
+    border-radius: 10px;
+}
+section.header h1{
+    font-family: var(--ff-h1);
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-h1);
+    color: var(--fc-h1);
+    margin:20px 0;
+}
+
+section.header p {
+    font-family: var(--ff-p);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-p);
+    color: var(--fc-p);
+    margin:0;
+    text-align:justify;
+    margin-bottom:20px;
+    line-height:22px;
+}
+
+}
